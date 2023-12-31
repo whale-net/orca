@@ -7,10 +7,10 @@ create image
 docker build .
 ```
 
-tag and push image
+publish done via actions but effectively
 ```
-done manually to my account for now...
-eventually ghcr?
+docker build -t ghcr.io/whale-net/orca:v0 .
+docker push ghcr.io/whale-net/orca:v0
 ```
 
 automatically deployed (if same tag is used) with argocd to https://orca.whale-net.net
